@@ -20,6 +20,141 @@
         </div>
     </header>
     <!-- Header Section End -->
+    <!-- Main Content Section Start -->
+    <main class="flex">
+        <!-- Players Image And Name Section Start -->
+        <section>
+            <div class="flex ml-80 mt-8 pb-10">
+                <div class="w-64 h-96 bg-black rounded-lg text-center">
+                    <img class="rounded-lg player-img" src="images/img1.png" alt="img">
+                    <h1 class="text-2xl font-semibold text-white mt-3 player-name" id="playerName1">Lionel Messi</h1>
+                    <p class="text-normal text-slate-500 mt-3">700 Goal | 298 Assist</p>
+                    <button class="px-20 py-2 bg-blue-500 text-white mt-6 select-btn button-color" id="playerBtn1">Select</button>
+                </div>
+                <div class="w-64 h-96 bg-black rounded-lg ml-6 text-center">
+                    <img class="rounded-lg player-img" src="images/img2.png" alt="img">
+                    <h1 class="text-2xl font-semibold text-white mt-3 player-name" id="playerName2">Neymar Jr</h1>
+                    <p class="text-normal text-slate-500 mt-3">305 Goal | 192 Assist</p>
+                    <button class="px-20 py-2 bg-blue-500 text-white mt-6 select-btn button-color" id="playerBtn2">Select</button>
+                </div>
+                <div class="w-64 h-96 bg-black rounded-lg ml-6 text-center">
+                    <img class="rounded-lg player-img" src="images/img3.png" alt="img">
+                    <h1 class="text-2xl font-semibold text-white mt-3 player-name" id="playerName3">Kylian Mbappé</h1>
+                    <p class="text-normal text-slate-500 mt-3">130 Goal | 76 Assist</p>
+                    <button class="px-20 py-2 bg-blue-500 text-white mt-6 select-btn button-color" id="playerBtn3">Select</button>
+                </div>
+            </div>
+            <div class="flex ml-80 pb-10">
+                <div class="w-64 h-96 bg-black rounded-lg text-center">
+                    <img class="player-img" src="images/img4.jpg" alt="img">
+                    <h1 class="text-2xl font-semibold text-white mt-3 player-name" id="playerName4">Kevin De Bruyne</h1>
+                    <p class="text-normal text-slate-500 mt-3">120 Goal | 205 Assist</p>
+                    <button class="px-20 py-2 bg-blue-500 text-white mt-6 select-btn button-color" id="playerBtn4">Select</button>
+                </div>
+                <div class="w-64 h-96 bg-black rounded-lg ml-6 text-center">
+                    <img class="player-img" src="images/img5.jpg" alt="img">
+                    <h1 class="text-2xl font-semibold text-white mt-3 player-name" id="playerName5">Sadio Mané</h1>
+                    <p class="text-normal text-slate-500 mt-3">169 Goal | 97 Assist</p>
+                    <button class="px-20 py-2 bg-blue-500 text-white mt-6 select-btn button-color" id="playerBtn5">Select</button>
+                </div>
+                <div class="w-64 h-96 bg-black rounded-lg ml-6 text-center">
+                    <img class="player-img" src="images/img6.jpg" alt="img">
+                    <h1 class="text-2xl font-semibold text-white mt-3 player-name" id="playerName6">Robert Lewandowski</h1>
+                    <p class="text-normal text-slate-500 mt-3">468 Goal | 137 Assist</p>
+                    <button class="px-20 py-2 bg-blue-500 text-white mt-6 select-btn button-color" id="playerBtn6">Select</button>
+                </div>
+            </div>
+            <div class="flex ml-80 pb-10">
+                <div class="w-64 h-96 bg-black rounded-lg text-center">
+                    <img class="player-img" src="images/img7.jpg" alt="img">
+                    <h1 class="text-2xl font-semibold text-white mt-3 player-name" id="playerName7">Riyad Mahrez</h1>
+                    <p class="text-normal text-slate-500 mt-3">98 Goal | 108 Assist</p>
+                    <button class="px-20 py-2 bg-blue-500 text-white mt-6 select-btn button-color" id="playerBtn7">Select</button>
+                </div>
+                <div class="w-64 h-96 bg-black rounded-lg ml-6 text-center">
+                    <img class="player-img" src="images/img8.jpg" alt="img">
+                    <h1 class="text-2xl font-semibold text-white mt-3 player-name" id="playerName8">Erling Haaland</h1>
+                    <p class="text-normal text-slate-500 mt-3">65 Goal | 16 Assist</p>
+                    <button class="px-20 py-2 bg-blue-500 text-white mt-6 select-btn button-color" id="playerBtn8">Select</button>
+                </div>
+                <div class="w-64 h-96 bg-black rounded-lg ml-6 text-center">
+                    <img class="player-img" src="images/img9.jpg" alt="img">
+                    <h1 class="text-2xl font-semibold text-white mt-3 player-name" id="playerName9">Virgil van Dijk</h1>
+                    <p class="text-normal text-slate-500 mt-3">45 Goal | 18 Assist</p>
+                    <button class="px-20 py-2 bg-blue-500 text-white mt-6 select-btn button-color" id="playerBtn9">Select</button>
+                </div>
+            </div>
+        </section>
+        <!-- Players Image And Name Section End -->
+
+        <section>
+            <div class="flex flex-col place-items-center">
+                <div class="bg-black md:px-20 xl:px-8 h-min p-6 mb-4 w-10/12">
+                  <div>
+                    <h4 class="text-2xl font-bold text-center text-white">Selected - V</h4>
+                    <img class="xl:w-3/5 md:w-5/12 w-3/5 mx-auto" src="images/heding_underline.png" alt="">
+                  </div>
+                  <div class="text-white text-center text-xl px-6 pt-5 pb-4 ml-4">
+                    <ul id="playerList" class="list-decimal"></ul>
+                    <p id="noPlayerListMsg">No Player Selected</p>
+                  </div>
+        
+                </div>
+                <div class="bg-black md:px-20 xl:px-10 p-6 mb-4 w-10/12">
+                  <div>
+                    <h4 class="text-2xl font-bold text-center text-white">Budget</h4>
+                    <img class="xl:w-3/5 md:w-5/12 w-3/5 mx-auto" src="images/heding_underline.png" alt="">
+                  </div>
+                  <div class="my-4">
+                    <div class="flex">
+                      <label class="text-gray-400 text-lg flex items-center mr-auto" for="perPlayer">Per
+                        Player</label>
+                      <input id="perPlayer" class="border text-white border-white bg-black w-7/12 p-2" type="text">
+                    </div>
+                  </div>
+        
+                  <div>
+                    <button id="calculateBtn"
+                      class="items-center w-full py-2 px-16 text-1xl font-medium text-center text-white button-color hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-4">
+                      <span class="px-2.5">Calculate</span>
+                    </button>
+                  </div>
+                  <div>
+                    <div class="flex">
+                      <p class="text-gray-400 text-lg mr-auto">Player Expenses</p>
+                      <p class="text-white text-lg text-left">$<span id="totalPlayerCost">0000</span></p>
+                    </div>
+                    <div class="my-4">
+                      <div class="flex">
+                        <label class="text-gray-400 text-lg flex items-center mr-auto" for="managerCost">Manager</label>
+                        <input id="managerCost" class="border text-white border-white bg-black w-7/12 p-2" type="text">
+                      </div>
+                    </div>
+                    <div class="my-4">
+                      <div class="flex">
+                        <label class="text-gray-400 text-lg flex items-center mr-auto" for="coachCost">Coach</label>
+                        <input id="coachCost" class="border text-white border-white bg-black w-7/12 p-2" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button id="totalCostBtn"
+                      class="items-center w-full py-2 px-12 text-1xl font-medium text-center text-white buton-color hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-4">
+                      Calculate Total
+                    </button>
+                    <div class="flex">
+                      <p class="text-amber-600 text-lg mr-auto font-bold">Player Expenses</p>
+                      <p class="text-white text-lg text-left">$<span id="totalCost">0000</span></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main Content Section End -->
+    <script src="js/utilities.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/calculation.js"></script>
     
 </body>
 </html>
